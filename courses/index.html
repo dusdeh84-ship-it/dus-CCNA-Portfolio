@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours CCNA | Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b1b2b;
+    color:white;
+}
+
+/* NAV */
+nav{
+    background:#06101c;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00c8ff;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    color:#00c8ff;
+    font-size:2.5rem;
+}
+
+/* GRID */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#16263a;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#00c8ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    color:#9ad7ff;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#06101c;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<ul>
+<li><a href="../index.html#about">À propos</a></li>
+<li><a href="../index.html#journey">Parcours</a></li>
+<li><a href="index.html">Cours</a></li>
+<li><a href="../projects/index.html">Projets</a></li>
+<li><a href="../index.html#skills">Compétences</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+<h1>📚 Cours CCNA</h1>
+<p>Parcours complet des technologies réseaux Cisco</p>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h3>Modèle OSI</h3>
+<p>Les 7 couches du modèle OSI et leur fonctionnement.</p>
+<a href="osi-model.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>TCP/IP</h3>
+<p>Modèle Internet et encapsulation des données.</p>
+<a href="tcp-ip.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>IPv4 Addressing</h3>
+<p>Adressage IPv4 et planification réseau.</p>
+<a href="ipv4-addressing.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>IPv6 Addressing</h3>
+<p>Nouvelle génération d’adressage IP.</p>
+<a href="ipv6-addressing.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Subnetting</h3>
+<p>Découpage des réseaux IPv4.</p>
+<a href="subnetting.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Ethernet</h3>
+<p>Communication réseau LAN.</p>
+<a href="ethernet.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Switching</h3>
+<p>Fonctionnement des commutateurs Cisco.</p>
+<a href="switching.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>VLAN</h3>
+<p>Segmentation logique des réseaux.</p>
+<a href="vlan.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>STP</h3>
+<p>Prévention des boucles réseau.</p>
+<a href="stp.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Trunking</h3>
+<p>Transport multi-VLAN sur un lien.</p>
+<a href="trunking.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Inter-VLAN Routing</h3>
+<p>Communication entre VLAN.</p>
+<a href="inter-vlan-routing.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>DHCP</h3>
+<p>Attribution automatique des IP.</p>
+<a href="dhcp.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>NAT</h3>
+<p>Traduction d’adresses réseau.</p>
+<a href="nat.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>ACL</h3>
+<p>Filtrage et sécurité réseau.</p>
+<a href="acl.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>OSPF</h3>
+<p>Routage dynamique Cisco.</p>
+<a href="ospf.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>WLAN</h3>
+<p>Réseaux sans fil Wi-Fi.</p>
+<a href="wlan.html">Ouvrir le cours</a>
+</div>
+
+<div class="card">
+<h3>Network Security</h3>
+<p>Sécurisation des infrastructures réseau.</p>
+<a href="network-security.html">Ouvrir le cours</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 - Portfolio CCNA</p>
+</footer>
+
+</body>
+</html>

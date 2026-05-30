@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle OSI | Portfolio CCNA</title>
+
+```
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px;
+        line-height: 1.7;
+        background: #f8fafc;
+        color: #1e293b;
+    }
+
+    h1,h2{
+        color:#0284c7;
+    }
+
+    .card{
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        margin-bottom:20px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:20px;
+    }
+
+    th,td{
+        border:1px solid #ddd;
+        padding:12px;
+        text-align:left;
+    }
+
+    th{
+        background:#0284c7;
+        color:white;
+    }
+
+    ul{
+        margin-left:20px;
+    }
+</style>
+```
+
+</head>
+<body>
+
+<h1>Modèle OSI</h1>
+
+<div class="card">
+
+```
+<h2>Définition</h2>
+
+<p>
+    Le modèle OSI (Open Systems Interconnection) est un modèle de référence
+    qui décrit comment les données circulent à travers un réseau.
+    Il est composé de 7 couches permettant de comprendre et de dépanner
+    les communications réseau.
+</p>
+```
+
+</div>
+
+<div class="card">
+
+```
+<h2>Les 7 couches OSI</h2>
+
+<table>
+
+    <tr>
+        <th>Couche</th>
+        <th>Nom</th>
+        <th>Exemple</th>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>Application</td>
+        <td>HTTP, DNS, FTP</td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Présentation</td>
+        <td>SSL, TLS, Encodage</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Session</td>
+        <td>Gestion des sessions</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Transport</td>
+        <td>TCP, UDP</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Réseau</td>
+        <td>IPv4, IPv6, OSPF</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Liaison de données</td>
+        <td>Ethernet, MAC</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Physique</td>
+        <td>Câbles, Fibre, Wi-Fi</td>
+    </tr>
+
+</table>
+```
+
+</div>
+
+<div class="card">
+
+```
+<h2>Équipements réseau</h2>
+
+<ul>
+    <li><strong>Routeur :</strong> Couche 3</li>
+    <li><strong>Switch :</strong> Couche 2</li>
+    <li><strong>Hub :</strong> Couche 1</li>
+</ul>
+```
+
+</div>
+
+<div class="card">
+
+```
+<h2>Encapsulation</h2>
+
+<p>
+    Lorsqu'un appareil envoie des données, chaque couche ajoute ses propres
+    informations avant la transmission. Ce processus est appelé
+    <strong>encapsulation</strong>.
+</p>
+
+<p>
+    À la réception, les informations sont retirées couche par couche :
+    c'est la <strong>désencapsulation</strong>.
+</p>
+```
+
+</div>
+
+<div class="card">
+
+```
+<h2>Points clés à retenir</h2>
+
+<ul>
+    <li>Le modèle OSI possède 7 couches.</li>
+    <li>Chaque couche a un rôle spécifique.</li>
+    <li>TCP fonctionne à la couche 4.</li>
+    <li>IP fonctionne à la couche 3.</li>
+    <li>Les adresses MAC sont utilisées à la couche 2.</li>
+    <li>Le modèle OSI est un outil essentiel pour le dépannage réseau.</li>
+</ul>
+```
+
+</div>
+
+<a href="../courses/index.html">
+    ← Retour aux cours
+</a>
+
+</body>
+</html>

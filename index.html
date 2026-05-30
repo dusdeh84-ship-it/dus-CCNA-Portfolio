@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio CCNA | Mon Parcours Cisco Networking</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    :root{
+        --primary:#00b4d8;
+        --secondary:#0f172a;
+        --dark:#020617;
+        --card:#1e293b;
+        --light:#f8fafc;
+    }
+
+    body{
+        font-family:'Poppins',sans-serif;
+        background:var(--secondary);
+        color:white;
+        line-height:1.6;
+    }
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        width:100%;
+        background:rgba(2,6,23,0.95);
+        backdrop-filter:blur(8px);
+        z-index:1000;
+        padding:15px 0;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        list-style:none;
+        gap:30px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        font-weight:500;
+        transition:0.3s;
+    }
+
+    nav a:hover{
+        color:var(--primary);
+    }
+
+    .hero{
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:40px;
+        background:
+        linear-gradient(rgba(2,6,23,.8),rgba(15,23,42,.95)),
+        url('assets/images/network-bg.jpg');
+        background-size:cover;
+        background-position:center;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+        margin-bottom:20px;
+    }
+
+    .hero span{
+        color:var(--primary);
+    }
+
+    .hero p{
+        max-width:800px;
+        margin-bottom:30px;
+        font-size:1.1rem;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:14px 28px;
+        background:var(--primary);
+        color:white;
+        text-decoration:none;
+        border-radius:8px;
+        font-weight:600;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        transform:translateY(-3px);
+    }
+
+    section{
+        padding:80px 10%;
+    }
+
+    .section-title{
+        text-align:center;
+        margin-bottom:50px;
+        color:var(--primary);
+        font-size:2rem;
+    }
+
+    .about{
+        text-align:center;
+        max-width:900px;
+        margin:auto;
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:var(--card);
+        border-radius:15px;
+        padding:25px;
+        transition:.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-8px);
+    }
+
+    .card h3{
+        color:var(--primary);
+        margin-bottom:15px;
+    }
+
+    .timeline{
+        border-left:4px solid var(--primary);
+        padding-left:25px;
+    }
+
+    .timeline-item{
+        margin-bottom:40px;
+    }
+
+    .timeline-item h3{
+        color:var(--primary);
+    }
+
+    .skills{
+        max-width:800px;
+        margin:auto;
+    }
+
+    .skill{
+        margin-bottom:25px;
+    }
+
+    .progress{
+        background:#334155;
+        border-radius:50px;
+        overflow:hidden;
+    }
+
+    .progress-bar{
+        height:20px;
+        background:var(--primary);
+    }
+
+    footer{
+        text-align:center;
+        padding:30px;
+        background:var(--dark);
+    }
+
+    @media(max-width:768px){
+
+        nav ul{
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .hero h1{
+            font-size:2.2rem;
+        }
+
+        section{
+            padding:60px 7%;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#journey">Parcours</a></li>
+        <li><a href="#courses">Cours</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+
+```
+<h1>
+    Mon Parcours <span>Cisco CCNA</span>
+</h1>
+
+<p>
+    Bienvenue sur mon portfolio de formation Cisco CCNA.
+    Vous y découvrirez mes cours, laboratoires Packet Tracer,
+    projets réseau, certifications et compétences techniques.
+</p>
+
+<a href="#journey" class="btn">
+    Explorer le parcours
+</a>
+```
+
+</header>
+
+<section id="about">
+
+```
+<h2 class="section-title">À propos de moi</h2>
+
+<div class="about">
+
+    <p>
+        Passionné par les infrastructures réseau et la cybersécurité,
+        je construis progressivement mes compétences à travers le programme
+        Cisco CCNA. Ce portfolio documente mon évolution, les laboratoires
+        réalisés ainsi que les projets qui m'ont permis d'acquérir une
+        expérience pratique.
+    </p>
+
+</div>
+```
+
+</section>
+
+<section id="journey">
+
+```
+<h2 class="section-title">Mon Parcours CCNA</h2>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <h3>CCNA 1 - Introduction to Networks</h3>
+        <p>Modèle OSI, TCP/IP, IPv4, IPv6, Ethernet et Packet Tracer.</p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>CCNA 2 - Switching & Wireless Essentials</h3>
+        <p>VLAN, STP, Trunking, Inter-VLAN Routing et WLAN.</p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>CCNA 3 - Enterprise Networking</h3>
+        <p>OSPF, ACL, NAT, DHCP, Sécurité et Automatisation.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="courses">
+
+```
+<h2 class="section-title">Cours Principaux</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Modèle OSI</h3>
+        <p>Comprendre les 7 couches de communication réseau.</p>
+    </div>
+
+    <div class="card">
+        <h3>Adressage IPv4</h3>
+        <p>Calcul de sous-réseaux et planification IP.</p>
+    </div>
+
+    <div class="card">
+        <h3>VLAN</h3>
+        <p>Segmentation logique des réseaux d'entreprise.</p>
+    </div>
+
+    <div class="card">
+        <h3>OSPF</h3>
+        <p>Routage dynamique dans les réseaux modernes.</p>
+    </div>
+
+    <div class="card">
+        <h3>ACL</h3>
+        <p>Contrôle du trafic et sécurisation des flux réseau.</p>
+    </div>
+
+    <div class="card">
+        <h3>NAT</h3>
+        <p>Traduction des adresses réseau privées/publiques.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="projects">
+
+```
+<h2 class="section-title">Mes Projets Réseau</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Infrastructure PME</h3>
+        <p>Conception d'un réseau pour 50 utilisateurs avec VLAN, DHCP et NAT.</p>
+    </div>
+
+    <div class="card">
+        <h3>Campus Universitaire</h3>
+        <p>Architecture multi-bâtiments avec routage OSPF.</p>
+    </div>
+
+    <div class="card">
+        <h3>Réseau Sécurisé</h3>
+        <p>Implémentation d'ACL et segmentation réseau avancée.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="skills">
+
+```
+<h2 class="section-title">Compétences</h2>
+
+<div class="skills">
+
+    <div class="skill">
+        <p>IPv4 & Subnetting</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>VLAN</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:85%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>OSPF</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:75%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>ACL</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:70%;"></div>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="contact">
+
+```
+<h2 class="section-title">Contact</h2>
+
+<div class="about">
+
+    <p>📧 email@example.com</p>
+    <p>💼 LinkedIn : linkedin.com/in/votreprofil</p>
+    <p>💻 GitHub : github.com/votreprofil</p>
+
+</div>
+```
+
+</section>
+
+<footer>
+
+```
+<p>© 2026 - Portfolio Cisco CCNA</p>
+```
+
+</footer>
+
+</body>
+</html>

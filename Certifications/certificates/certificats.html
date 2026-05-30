@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications CCNA | Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b1b2b;
+    color:white;
+}
+
+/* NAV */
+nav{
+    background:#06101c;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00c8ff;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    color:#00c8ff;
+    font-size:2.5rem;
+}
+
+header p{
+    opacity:0.8;
+}
+
+/* GRID */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background:#16263a;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    max-height:180px;
+    object-fit:contain;
+    border-radius:10px;
+    background:white;
+    padding:10px;
+}
+
+.card h3{
+    color:#00c8ff;
+    margin-top:15px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#00c8ff;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#06101c;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="courses/index.html">Cours</a></li>
+<li><a href="projects/index.html">Projets</a></li>
+<li><a href="certification.html">Certifications</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+<h1>🎓 Mes Certifications CCNA</h1>
+<p>Certificats obtenus et validations de compétences réseau</p>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+<div class="grid">
+
+<!-- CERT 1 -->
+<div class="card">
+<img src="assets/certificates/ccna-intro.png" alt="CCNA Introduction">
+<h3>Introduction to Networks</h3>
+<p>Cisco Networking Academy</p>
+<a class="btn" href="assets/certificates/ccna-intro.png" target="_blank">Voir certificat</a>
+</div>
+
+<!-- CERT 2 -->
+<div class="card">
+<img src="assets/certificates/ccna-switching.png" alt="CCNA Switching">
+<h3>Switching, Routing & Wireless</h3>
+<p>Cisco Networking Academy</p>
+<a class="btn" href="assets/certificates/ccna-switching.png" target="_blank">Voir certificat</a>
+</div>
+
+<!-- CERT 3 -->
+<div class="card">
+<img src="assets/certificates/ccna-enterprise.png" alt="CCNA Enterprise">
+<h3>Enterprise Networking</h3>
+<p>Cisco Networking Academy</p>
+<a class="btn" href="assets/certificates/ccna-enterprise.png" target="_blank">Voir certificat</a>
+</div>
+
+<!-- CERT 4 -->
+<div class="card">
+<img src="assets/certificates/network-fundamentals.png" alt="Network Fundamentals">
+<h3>Network Fundamentals</h3>
+<p>Cisco / Formation complémentaire</p>
+<a class="btn" href="assets/certificates/network-fundamentals.png" target="_blank">Voir certificat</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 - Portfolio CCNA</p>
+</footer>
+
+</body>
+</html>
